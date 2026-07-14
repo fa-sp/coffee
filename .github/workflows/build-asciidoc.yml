@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build site
-        run: docker run --rm -v $PWD:/docs asciidoctor/docker-asciidoctor asciidoctor docs/index.adoc -D public
+        run: docker run --rm -v $PWD:/docs -w /docs asciidoctor/docker-asciidoctor asciidoctor docs/index.adoc -D public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

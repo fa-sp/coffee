@@ -1,3 +1,5 @@
+:stylesheet: joomla-dark.css
+:linkcss:
 = Hello, AsciiDoc!
 
 This is an interactive editor.

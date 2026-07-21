@@ -58,8 +58,8 @@ A Demonstration
 --
 image::media/escher_knots.jpg[.r-stretch]
 --
-[.r-stretch]
-image::media/escher_knots.jpg[]
+
+image::media/escher_knots.jpg[contain]
 
 results in:
 image::media/escher_knots.jpg[.r-stretch]

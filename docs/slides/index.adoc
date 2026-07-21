@@ -56,7 +56,8 @@ A Demonstration
 
 [source, asciidoc]
 --
-image::media/escher_knots.jpg[.r-stretch]
+[.stretch]
+image::media/escher_knots.jpg[]
 --
 
 results in:

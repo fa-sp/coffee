@@ -48,7 +48,7 @@ jobs:
             "
       - name: Copy media assets
         run: |
-          cp -r docs/media public/
+          #cp -r docs/media public/
           cp -r docs/slides/media public/slides/     
           
       - name: Deploy

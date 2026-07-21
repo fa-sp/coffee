@@ -59,7 +59,7 @@ A Demonstration
 image::media/escher_knots.jpg[.r-stretch]
 --
 
-image::media/escher_knots.jpg[width=70%]
+image::media/escher_knots.jpg[alt=escher_knots,width=640,height=480]
 
 results in:
 image::media/escher_knots.jpg[.r-stretch]

@@ -11,6 +11,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build site
         run: docker run --rm -v $PWD:/docs -w /docs asciidoctor/docker-asciidoctor asciidoctor docs/index.adoc -D public
+      - name: Build Asciidoctor image
+        run: |
+          docker build \
+            -t local/asciidoctor-revealjs \
+            -f docker/asciidoctor/Dockerfile .
       - name: Build Reveal.js slides
         run: |
           docker run --rm \

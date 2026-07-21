@@ -59,10 +59,8 @@ A Demonstration
 image::media/escher_knots.jpg[.r-stretch]
 --
 
-image::media/escher_knots.jpg[alt=escher_knots,width=640]
-
 results in:
-image::media/escher_knots.jpg[.r-stretch]
+image::media/escher_knots.jpg[alt=escher_knots,scaledwidth=25%]
 
 === Background Images
 

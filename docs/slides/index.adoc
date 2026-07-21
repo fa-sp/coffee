@@ -1,4 +1,9 @@
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5
+:revealjs_theme: league
+
+:stem: latexmath
+:revealjs_plugins: math
+:revealjs_mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 // Presentation theme to use
 // Themes provided: beige, black, black-contrast, blood, dracula, league, moon, night, serif, simple, sky, solarized, white, white-contrast
@@ -354,6 +359,13 @@ results in:
 $ J(\theta_0,\theta_1) = \sum_{i=0} $
 
 \( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \)
+
+stem:[J(\theta_0,\theta_1)=\sum_{i=0}^{m}]
+
+[stem]
+++++
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+++++
 
 == Speakers View
 

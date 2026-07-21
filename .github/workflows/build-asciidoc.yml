@@ -9,25 +9,45 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Build site
-        run: docker run --rm -v $PWD:/docs -w /docs asciidoctor/docker-asciidoctor asciidoctor docs/index.adoc -D public
+      
       - name: Build Asciidoctor image
         run: |
           docker build \
             -t local/asciidoctor-revealjs \
             -f .github/docker/asciidoctor/Dockerfile .
+
+      - name: Create output directories
+        run: |
+          mkdir -p public
+          mkdir -p public/slides
+      
+      - name: Build documentation
+        run: |
+          docker run --rm \
+            -v "$PWD":/documents \
+            -w /documents \
+            local/asciidoctor \
+            asciidoctor \
+              -r asciidoctor-diagram \
+              docs/index.adoc \
+              -D public
+      
       - name: Build Reveal.js slides
         run: |
           docker run --rm \
             -v "$PWD":/documents \
             -w /documents \
-            asciidoctor/docker-asciidoctor \
+            local/asciidoctor \
             sh -c "
-              gem install asciidoctor-revealjs &&
               find docs/slides -name '*.adoc' -exec \
-                asciidoctor-revealjs {} -D public/slides \;
+                asciidoctor-revealjs \
+                  -r asciidoctor-diagram \
+                  {} \
+                  -D public/slides \
+                \;
             "
-      - name: Deploy asciidoc pages
+            
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

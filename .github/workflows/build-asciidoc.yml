@@ -11,8 +11,25 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build site
         run: docker run --rm -v $PWD:/docs -w /docs asciidoctor/docker-asciidoctor asciidoctor docs/index.adoc -D public
-      - name: Deploy
+      - name: Build Reveal.js slides
+        run: |
+          docker run --rm \
+            -v "$PWD":/documents \
+            -w /documents \
+            asciidoctor/docker-asciidoctor \
+            sh -c "
+              gem install asciidoctor-revealjs &&
+              find docs/slides -name '*.adoc' -exec \
+                asciidoctor-revealjs {} -D public/slides \;
+            "
+      - name: Deploy asciidoc pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+      - name: Deploy asciidoc slides
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          destination_dir: slides
+          publish_dir: ./docs/slides

@@ -56,12 +56,11 @@ A Demonstration
 
 [source, asciidoc]
 --
-image::media/escher_knots.jpg[]
+image::media/escher_knots.jpg[.r-stretch]
 --
 
 results in:
-
-image::media/escher_knots.jpg[]
+image::media/escher_knots.jpg[.r-stretch]
 
 === Background Images
 

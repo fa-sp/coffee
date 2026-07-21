@@ -46,7 +46,11 @@ jobs:
                   -D public/slides \
                 \;
             "
-            
+      - name: Copy media assets
+        run: |
+          cp -r docs/media public/
+          cp -r docs/slides/media public/slides/     
+          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

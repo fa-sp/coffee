@@ -13,7 +13,7 @@ jobs:
       - name: Build Asciidoctor image
         run: |
           docker build \
-            -t local/asciidoctor-revealjs \
+            -t local/asciidoctor \
             -f .github/docker/asciidoctor/Dockerfile .
 
       - name: Create output directories

@@ -356,8 +356,6 @@ $ J(\theta_0,\theta_1) = \sum_{i=0} $
 --
 results in:
 
-$ J(\theta_0,\theta_1) = \sum_{i=0} $
-J(\theta_0,\theta_1) = \sum_{i=0}
 \( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \)
 
 stem:[J(\theta_0,\theta_1)=\sum_{i=0}^{m}]

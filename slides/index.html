@@ -426,12 +426,7 @@ actor Alice
 Git -&gt; Alice: Pull
 Alice -&gt; Alice: Work
 Alice -[#red]&gt; Git  : Push
-....</code></pre></div></div><div class="paragraph"><p>results in:</p></div><div class="literalblock"><div class="content"><pre>hide footbox
-actor Alice
-database Git
-Git -&gt; Alice: Pull
-Alice -&gt; Alice: Work
-Alice -[#red]&gt; Git  : Push</pre></div></div></div></section><section id="_graphviz"><h2>Graphviz</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">....
+....</code></pre></div></div><div class="paragraph"><p>results in:</p></div><div class="imageblock"><img src="diag-plantuml-md5-02dc9eb77bd65ac267465b8633cfd129.png" alt="Diagram"></div></div></section><section id="_graphviz"><h2>Graphviz</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">....
 [graphviz]
 digraph foo {
   rankdir=LR;
@@ -443,21 +438,14 @@ digraph foo {
 }
 ....</code></pre></div></div>
 <div class="paragraph"><p>results in:</p></div>
-<div class="literalblock"><div class="content"><pre>digraph foo {
-  rankdir=LR;
-  node [style=rounded]
-  node1 [shape=box]
-  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
-  node3 [shape=record, label="{ a | b | c }"]
-
-  node1 -&gt; node2 -&gt; node3
-}</pre></div></div></div></section><section id="_mermaid"><h2>Mermaid</h2><div class="slide-content"><div class="paragraph"><p>Sample Git Flow diagram done by <a href="https://mermaid.js.org/">Mermaid.Js</a></p></div>
+<div class="imageblock"><img src="diag-graphviz-md5-31f6a89f0d18d59030058c3af2cb0a0b.png" alt="Diagram"></div></div></section><section id="_mermaid"><h2>Mermaid</h2><div class="slide-content"><div class="paragraph"><p>Sample Git Flow diagram done by <a href="https://mermaid.js.org/">Mermaid.Js</a></p></div>
 <div class="listingblock"><div class="content"><pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">[mermaid]
 %%{init: { 'theme': 'neutral', 'gitGraph': {'rotateCommitLabel': false}} }%%
    gitGraph
        commit id:"1"</code></pre></div></div>
 <div class="paragraph"><p>results in:</p></div>
-<div class="literalblock"><div class="content"><pre>%%{init: { 'logLevel': 'debug', 'theme': 'neutral', 'gitGraph': {'rotateCommitLabel': false}} }%%
+<div class="listingblock"><div class="content"><pre>Failed to generate image: Could not find the 'mmdc' executable in PATH; add it to the PATH or specify its location using the 'mmdc' document attribute
+%%{init: { 'logLevel': 'debug', 'theme': 'neutral', 'gitGraph': {'rotateCommitLabel': false}} }%%
    gitGraph
        commit id:"1"
        commit id:"2"

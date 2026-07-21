@@ -56,12 +56,12 @@ A Demonstration
 
 [source, asciidoc]
 --
-image::media/morpheus.jpg[]
+image::media/escher_knots.jpg[]
 --
 
 results in:
 
-image::media/morpheus.jpg[]
+image::media/escher_knots.jpg[]
 
 === Background Images
 

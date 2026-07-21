@@ -215,14 +215,14 @@ and data science. Open source forever Github.
 
 [source, asciidoc]
 --
-* Im
+* I'm
 * a
 * List
 --
 
 results in:
 
-* Im
+* I'm
 * a
 * List
 
@@ -356,7 +356,7 @@ $ J(\theta_0,\theta_1) = \sum_{i=0} $
 --
 results in:
 
-\( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \)
+// \( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \)
 
 stem:[J(\theta_0,\theta_1)=\sum_{i=0}^{m}]
 [stem]

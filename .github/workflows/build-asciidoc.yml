@@ -15,7 +15,7 @@ jobs:
         run: |
           docker build \
             -t local/asciidoctor-revealjs \
-            -f docker/asciidoctor/Dockerfile .
+            -f .github/docker/asciidoctor/Dockerfile .
       - name: Build Reveal.js slides
         run: |
           docker run --rm \

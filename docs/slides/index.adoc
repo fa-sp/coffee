@@ -1,6 +1,8 @@
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5
+
 // Presentation theme to use
 // Themes provided: beige, black, black-contrast, blood, dracula, league, moon, night, serif, simple, sky, solarized, white, white-contrast
-:revealjs_theme: moon
+:revealjs_theme: league
 
 // For custom themes, provide path to CSS file relative to the document:
 // :revealjs_customTheme: custom.css

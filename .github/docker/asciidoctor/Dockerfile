@@ -1,2 +1,9 @@
 FROM asciidoctor/docker-asciidoctor:latest
-RUN gem install asciidoctor-revealjs
+
+RUN apk add --no-cache \
+    openjdk17-jre \
+    graphviz
+
+RUN gem install \
+    asciidoctor-revealjs \
+    asciidoctor-diagram

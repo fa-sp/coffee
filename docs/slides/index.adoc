@@ -60,7 +60,7 @@ image::media/escher_knots.jpg[.r-stretch]
 --
 
 results in:
-image::media/escher_knots.jpg[200,300]
+image::media/escher_knots.jpg[Sunset,200,300]
 
 === Background Images
 

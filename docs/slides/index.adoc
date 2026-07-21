@@ -60,7 +60,7 @@ image::media/escher_knots.jpg[.r-stretch]
 --
 
 results in:
-image::media/escher_knots.jpg[alt=escher_knots,width=200, height=300]
+image::media/escher_knots.jpg[200,300]
 
 === Background Images
 

@@ -60,7 +60,9 @@ image::media/escher_knots.jpg[.r-stretch]
 --
 
 results in:
-image::media/escher_knots.jpg[Seventies vibe,height="320px",data-preview-image="images/70s.jpg",data-preview-fit="contain"]
+
+[.stretch]
+image::media/escher_knots.jpg[]
 
 === Background Images
 

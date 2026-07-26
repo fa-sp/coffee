@@ -1,7 +1,7 @@
 //:stylesheet: joomla-dark.css
 //:linkcss:
-:stylesheet: asciidoctor.css
-:toc: left
+//:stylesheet: asciidoctor.css
+//:toc: left
 :toclevels: 4
 :sectnums:
 

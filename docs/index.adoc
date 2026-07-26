@@ -1,7 +1,9 @@
-:stylesheet: joomla-dark.css
-:linkcss:
-= Hello, AsciiDoc!
+//:stylesheet: joomla-dark.css
+//:linkcss:
+:stylesheet: asciidoctor.css
 :toc: left
+:toclevels: 4
+:sectnums:
 
 include::recipes.adoc[]
 

@@ -1,9 +1,11 @@
 :stylesheet: joomla-dark.css
 :linkcss:
 = Hello, AsciiDoc!
+:toc:
+:toclevels: 4
+:sectnums:
 
-This is an interactive editor.
-Use it to try https://asciidoc.org[AsciiDoc].
+include::recipes.adoc[]
 
 == Section Title
 

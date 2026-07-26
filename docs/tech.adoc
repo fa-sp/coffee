@@ -1,0 +1,4 @@
+== Technical Documentation
+=== Lelit Bianca PL41TEM
+* Steam nozzle o ring: 5mm inner diameter, 2mm thickness, 9mm outer diameter
+* 

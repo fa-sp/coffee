@@ -2,8 +2,6 @@
 :linkcss:
 = Hello, AsciiDoc!
 :toc: left
-#:toclevels: 4
-#:sectnums:
 
 include::recipes.adoc[]
 
